@@ -1,0 +1,66 @@
+<!--
+    주제 : 인사 관리 시스템
+        [요구사항]
+        1. 인사 정보 등록 
+            - '이름', '생년월일' 등등 그 외 임의 추가 가능
+            - 각 정보들을 HTML로 입력받아서 JS에서 등록 처리하기.
+        2. 전체 인사 정보 출력 내역 : 현재 등록된 모든 인사 정보를 출력, 점수는 별도로 각 출력
+        3. 인사의 점수 등록 : 각 인사별 (각 연도별)상반기, 하반기 등등 그 외 임의 추가 가능
+            -각 상반기, 하반기 점수를 HTML로 입력받아서 JS에서 등록 처리하기 
+        4. 인사별 전체 점수 정보 출력 내역 
+            - 각 인사별 점수를 출력하시오.
+    1. 위 요구사항에 따른 화면 설계/구성
+    2. 위 요구사항에 따른 메모리(변수/배열/CSV)
+
+-->
+<!DOCTYPE html>
+<html">
+<head>
+    
+</head>
+<body>
+    <div>
+        <h1>인사관리시스템</h1>
+        이름 <input type="text" class="name"/> <br />
+        생년월일 <input type="text" class="birth"/> <br />
+        인사번호 <input type="text" class="number"/> <br />
+        <button onclick="info()" type="button">등록</button>
+    </div>
+    <div>
+        <table border="1" class="infoOutput">
+            <thead><tr> <th>이름</th> <th>생년월일</th> <th>인사번호</th> </tr> </thead>
+            <tbody>
+            <tr> <td>유재석</td> <td>99-10-09</td> <td>1</td> </tr> <br />
+            <tr> <td>강호동</td> <td>00-01-23</td> <td>2</td> </tr> <br />
+            </tbody>
+        </table>
+
+    </div>
+    <div>
+        <h1>인사점수등록</h1>
+        인사번호 <input type="text" class="num"/> <br />
+        상반기 <input type="text" class="high"/> <br />
+        하반기 <input type="text" class="low"/> <br />
+        년도 <input type="text" class="year"/> <br />
+        <button onclick="score()" type="button">등록</button>
+    </div>
+    
+    <div>
+        <table border="1" class="scoreOutput">
+            <thead><tr> <th>인사번호</th> <th>상반기점수</th> <th>하반기점수</th> <th>년도</th> </tr> </thead>
+            <tbody>
+            <tr> <td>1</td> <td>80</td> <td>90</td> <td>2021</td> </tr> 
+            <tr> <td>2</td> <td>70</td> <td>75</td> <td>2020</td> </tr> 
+            </tbody>
+        </table>
+
+    </div>
+    
+
+
+    
+    
+    
+    <script src="2_중간과제10.js"></script>
+</body>
+</html>

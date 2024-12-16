@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        div{border: 1px solid red;}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        여기는 컨테이너
+    </div>
+    <h3>그리드</h3>
+    <div class="container">
+        여기는 부트스트랩 컨테이너
+    </div>
+
+    <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            조각1
+          </div>
+          <div class="col">
+            조각2
+          </div>
+          <div class="col">
+            조각3
+          </div>
+        </div>
+      </div>
+
+      <div class="container"> <!--하나의 구역마다 12개의 조각(그리드) 제공한다.-->
+        <div class="row">
+        <div class="col-6">6조각</div>
+        <div class="col-4">4조각</div>
+        <div class="col-2">2조각</div>
+      </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-3"> 6조각안에서 3조각</div>
+                    <div class="col-9"> 6조각안에서 9조각</div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="row">
+                    <div class="col-6"> 3조각안에서 6조각</div>
+                    <div class="col-6"> 3조각안에서 6조각</div>
+                </div>
+            </div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col-3"> 3조각안에서 3조각</div>
+                        <div class="col-9"> 3조각안에서 9조각</div>
+                    </div>
+                </div>
+            </div>
+    
+    </div>
+
+    <h3>테이블</h3>
+    <div class="container">
+        <table class="table table-striped table-hover"> 
+            <!--table : 부트스트랩 기본 테이블 css 적용, table-striped : 행의 홀/짝 구분 css 적용 table-hover : 마우스 올렸을때 행 강조-->
+            <thead><tr><th>번호</th><th>제목</th><th>작성자</th><th>작성일</th></tr></thead>
+            <tbody>
+                <tr><td>1</td><td>안녕하세요</td><td>유재석</td><td>2024-12-30</td></tr>
+                <tr><td>2</td><td>감사해요</td><td>강호동</td><td>2024-11-03</td></tr>
+                <tr><td>3</td><td>잘있어요</td><td>이수근</td><td>2024-05-01</td></tr>
+                <tr><td>4</td><td>다시만나요</td><td>이승기</td><td>2024-08-17</td></tr>
+                <tr><td>5</td><td>폼생폼사</td><td>은지원</td><td>2024-01-23</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3>입력 폼</h3>
+    <div class="container">
+        <form>
+            입력상자 : <input type="text" />
+            <label class="form-label">입력상자</label>
+            <input type="text" class="form-control"/>
+            <select class="form-select">
+                <option>사과</option>
+                <option>바나나</option>
+            </select>
+        </form>
+    </div>
+
+    <h3>아코디언</h3>
+    <div class="container">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  이용약관
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>이것은 테스트입니다.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  개인정보 방침
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>이것은 테스트입니다.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  환불규정
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>이것은 테스트입니다.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <h3>경고창</h3>
+    <h3>캐러셀 : 이미지 슬라이드</h3>
+    <div class="container">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../다운로드3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../다운로드1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../다운로드2.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+
+    <h3>라이브 모달</h3>
+    <div class="container">
+        <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+    </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          여기는 내용입니다.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+          <button type="button" class="btn btn-primary">등록</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+</body>
+</html>

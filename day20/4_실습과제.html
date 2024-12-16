@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <div>
+      <form>
+        <h3>회원가입</h3>
+        아이디 <input type="text" class="id1" /> 비밀번호
+        <input type="password" class="pw1" />
+        <button type="button" onclick="회원가입()">회원가입</button>
+      </form>
+      <form>
+        <h3>로그인</h3>
+        아이디 <input type="text" class="id2" /> 비밀번호
+        <input type="password" class="pw2" />
+        <button type="button" onclick="로그인()">로그인</button>
+      </form>
+      <div class="text"></div>
+    </div>
+    <div>
+      <h3>서비스 구독 신청</h3>
+      <h4>필수 정보</h4>
+      사용인원 <input type="text" class="people" /> <br />
+      서비스형태
+      <input type="radio" value="Basic" name="gener" class="serType" /> Basic
+      <input type="radio" value="Standard" name="gener" class="serType" />
+      Standard
+      <input type="radio" value="Premium" name="gener" class="serType" />
+      Premium <br />
+      스토리지용량 <input type="text" class="storage1" />TB <br />
+      구독기간 <input type="text" class="period" />개월 <br />
+      <h4>부가 정보</h4>
+      회사명 <input type="text" class="company" /> <br />
+      전화번호 <input type="text" class="phone" /> <br />
+      이메일 <input type="text" class="email" /> <br />
+      주소 <input type="text" class="address" />
+      <button type="button" onclick="서비스구독()">신청</button>
+    </div>
+    <div class="service1"></div>
+
+    <script src="4_실습과제.js"></script>
+  </body>
+</html>
