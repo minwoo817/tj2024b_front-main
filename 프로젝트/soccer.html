@@ -3,14 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>스포츠 커뮤니티</title>
     <link rel="stylesheet" href="soccer.css">
 </head>
 <body>
-    <div class="container1">
-        <h4>축구 게시판</h4>
+    <div class="wrap">
+        <header>
+            <h2>스포츠 커뮤니티</h2>
+            <nav>
+                <ul>
+                    
+                    <li><a href="#home"> <h3> 홈 </h3> </a></li>
+                    <li><a href="#btb"> <h4> 농구 </h4> </a></li>
+                    <li><a href="#bsb"> <h4> 야구 </h4> </a></li>
+                    <li><a href="soccer.html"> <h4> 축구 </h4> </a></li>
+                </ul>
+            </nav>
+        </header>
+    <div class="container">
+        <h3>축구 게시판</h3>
         <button type="button"><a href="soccerwrite.html">글쓰기</a></button>
-    </div>
+    
     <div>
         <table border="1">
             <thead> <tr> <th>작성일</th> <th>제목</th> <th>조회수</th> </tr> </thead>
@@ -21,9 +34,14 @@
             </tbody> 
         </table>
     </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 K-DT. All rights reserved.</p>
+    </footer>
+</div>
+    
 
-
-
-    <script src=""></script>
+    <script src="./js/soccerdata.js"> </script>   
+    <script src="./js/soccer.js"> </script>
 </body>
 </html>
